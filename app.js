@@ -83,6 +83,10 @@ function checkWin(result, userchoice) {
 }
 
 reset.addEventListener('click', function() {
+    let src = "";
+    userRes.setAttribute('src',src);
+    compRes.setAttribute('src',src);
+
     choices.forEach((c) => {
         c.style.borderColor = "black";
     });
